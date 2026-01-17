@@ -1,15 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        int[] array = new int[5];
+        int[][] array = new int[5][5];
         for (int i = 0; i < array.length; i++) {
-            array[i] = i;
-            System.out.println(array[i]);
-
-        }
-        String[] strArray = {"May", "June", "July", "August", "September", "October"};
-        for (int i = 0; i < strArray.length; i++) {
-            System.out.println(strArray[i]);
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
         }
 
 
